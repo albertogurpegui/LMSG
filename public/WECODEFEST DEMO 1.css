@@ -1,0 +1,99 @@
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4, 5rem);
+    grid-template-columns:repeat(8, 5rem);
+    transform:rotate(-45deg)
+}
+#item-1{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:aqua;
+}
+#item-2{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darkcyan;
+    grid-column: 1;
+}
+#item-3{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:dodgerblue;
+    grid-column: 1;
+}
+#item-4{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:yellowgreen;
+    grid-column: 1;
+}
+#item-5{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darkmagenta;
+}
+#item-6{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:deepskyblue;  
+}
+#item-7{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:yellow;
+}
+#item-8{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:brown;   
+}
+#item-9{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:crimson;   
+}
+#item-10{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darkolivegreen;   
+}
