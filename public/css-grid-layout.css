@@ -1,4 +1,5 @@
 * {
+    background-color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,64 +19,48 @@ body {
 /* Page Layout */
 
 .container{
-    max-width: 900px;
-    background-color: #fff;
     margin: 0 auto;
     padding: 0 60px;
-
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-        "header header"
-        "main sidebar"
-        "footer footer";
-    grid-gap: 60px;
 }
-
+.nav { grid-column:nav}
+.button {
+    display: grid;
+    margin:auto;
+    padding: 0 60px;
+    grid-column:button
+    
+}
 /* Header */
 
-header{
-    grid-area: header;
-
+nav {
+    justify-self: start;
+    list-style: none;
     color: #ef5350;
     padding: 20px 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-header nav {
-    justify-self: start;
-    
-    list-style: none;
-
-/*  This did not work well, inline-block used instead */
-/*  display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    align-items: end;*/
-}
-
-header nav li {
+nav li {
+    color: #ef5350;
     margin-right: 15px;
     display: inline-block;
 }
 
-header button {
+button {
+    color: #ef5350;
     justify-self: end;
-
     background-color: #ef5350;
     border: none;
     padding: 8px 25px;
     color: #fff;
     cursor: pointer;
     text-transform: uppercase;
+    justify-content:center
 }
 
 /* Main Section */
 
 .main {
-    grid-area: main;
-    
     text-align: center;
 }
 
@@ -94,10 +79,17 @@ header button {
 
 
 /* Sidebar */
+.grid{
+    padding: 60px 0;
+    display: grid;
+    grid-template-areas: "head menu main";
+}
+.uno { grid-area:head}
+.dos { grid-area:menu}
+.tres { grid-area:main}
+.cuatro { grid-area:main}
 
 .sidebar {
-    grid-area: sidebar;
-
     border: 1px solid #a2a2a2;
     padding: 20px;
 }
@@ -105,8 +97,6 @@ header button {
 /* Footer */
 
 footer {
-    grid-area: footer;
-
     color: #ef5350;
     text-align: center;
     padding: 20px 0;
@@ -116,17 +106,4 @@ footer p {
     color: #777;
     font-size: 12px;
     padding: 10px;
-}
-
-
-@media (max-width: 600px) {
-    .container{
-        /*  Redefine the grid into a single column layout. */
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "header"
-            "main"
-            "sidebar"
-            "footer";
-    }
 }
